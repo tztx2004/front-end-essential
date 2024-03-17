@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+h1 {
+  font-size: 26px;
+}
+
+ul {
+  list-style: none;
+  border: 1px solid black;
+  width: 300px;
+}
+
+.button {
+  padding: 10px;
+  background: #4285f4;
+  border: none;
+  color: #fff;
+}
