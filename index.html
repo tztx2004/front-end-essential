@@ -18,7 +18,7 @@
         <li>제주어항</li>
       </ul>
       <!-- img 태그와 br태그는 가운데 내용이 없는 태그입니다. -->
-      <img src="./images/중식.jpg" alt="중식사진" style="width: 100%" />
+      <img src="./images/중식.jpg" alt="중식사진" style="width: 100%" id="img" />
       <br />
 
       <div class="buttonWrap">
@@ -46,7 +46,13 @@
       // addEventListener는 이벤트를 등록하기 위해 사용하는 메서드입니다
       // 두번째 인자에서는 콜백함수를 받아서 클릭이벤트가 일어났을때의 로직을 기술하면 됩니다
       button.addEventListener("click", () => {
-        console.log("나는 버튼이다!!");
+        // 3. button click 이벤트가 일어났을때 '무엇이' 변하는 지 알아야함
+        // 우선 사진을 변경시켜보겠습니다
+        const img = document.querySelector("img");
+        console.log(img);
+
+        // 사진태그의 src 속성이 바뀌어야 이미지가 바뀝니다.
+        img.setAttribute("src", "./images/보리식당.jpg");
       });
     </script>
   </body>
