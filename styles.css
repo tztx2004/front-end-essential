@@ -17,6 +17,8 @@ ul {
   background: #4285f4;
   border: none;
   color: #fff;
+
+  cursor: pointer;
 }
 
 main {
